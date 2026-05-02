@@ -1,0 +1,10 @@
+.home-button {
+    display: flex;
+    gap: 2em;
+}
+
+.link-box {
+    flex: 1;
+    text-align: center;      
+    padding: 20px;
+}

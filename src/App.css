@@ -33,7 +33,7 @@
   }
 }
 
-.top-bar {
+top-bar {
   display: flex;
   place-items: center;
   justify-content: center;

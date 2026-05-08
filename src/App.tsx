@@ -24,7 +24,9 @@ function App() {
         e.preventDefault();
         const formData = new FormData(e.currentTarget);
         const newStuff = formData.get("new-stuff") as string;
-        setStuff(new Set([...stuff, newStuff]));
+        if (newStuff) {
+          setStuff(new Set([...stuff, newStuff]));
+        }
         e.currentTarget.reset();
       }}>
         <input name="new-stuff" placeholder='Add new stuff' />
